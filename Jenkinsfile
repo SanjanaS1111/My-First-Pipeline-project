@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your source code from version control
-                git 'https://github.com/SanjanaS1111/My-First-Pipeline-project.git'
+                git branch: 'main', url: 'https://github.com/SanjanaS1111/My-First-Pipeline-project.git'
             }
         }
         
